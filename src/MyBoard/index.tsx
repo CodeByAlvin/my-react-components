@@ -8,7 +8,14 @@ const MyBoard: React.FC = () => {
   return (
     <ul className='my-sider'>
       {
-        routes.map((item) => <CustomerLink key={item.path} to={item.path}>{item.title}</CustomerLink>)
+        routes.map((item) =>
+          <CustomerLink
+            exact={!!item.exact}
+            key={item.path}
+            to={item.path}
+          >
+            {item.title}
+          </CustomerLink>)
       }
     </ul>
   )

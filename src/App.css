@@ -1,3 +1,8 @@
 .box {
   display: flex;
 }
+
+.switch {
+  flex: 1;
+  margin-top: 20px;
+}

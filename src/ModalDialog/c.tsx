@@ -10,7 +10,7 @@ class DialogModel {
 
 const ModalComponent = () => {
 
-  const [state, setState] = useState<DialogModel>(new DialogModel);
+  const [state, setState] = useState<DialogModel>(new DialogModel());
 
   const modalHandler = (e: CustomEventInit<DialogModel>) => {
     setState(e.detail || new DialogModel());

@@ -1,7 +1,8 @@
+import Button from "./Button";
 import Modal from "./ModalDialog";
 
 
-export default [
+const arr = [
   {
     path: "/",
     exact: true,
@@ -9,14 +10,12 @@ export default [
     main: Modal
   },
   {
-    path: "/bubblegum",
-    title: '',
-    main: Modal
+    path: "/button",
+    title: 'Button',
+    main: Button
   },
-  {
-    path: "/shoelaces",
-    title: '',
-    main: Modal,
-  }
+  
 ];
+
+export default arr;
 

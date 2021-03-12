@@ -1,3 +1,8 @@
 .active {
   color: red;
 }
+
+.link {
+  display: block;
+  margin-bottom: 20px;
+}
